@@ -1,0 +1,217 @@
+/* Root colour contrast */
+
+:root {
+
+  --input-border: #8b8a8b;
+
+  --input-focus-h: 245;
+
+  --input-focus-s: 100%;
+
+  --input-focus-l: 42%;
+
+}
+
+/* All Element default display */
+
+*,
+
+*::before,
+
+*::after {
+
+  box-sizing: border-box;
+
+  margin: 0px;
+
+  padding: 0px;
+
+}
+
+/* Body */
+
+html,
+
+body {
+
+  font-size: 15pt;
+
+  display: grid;
+
+  height: 100%;
+
+  width: 100%;
+
+  place-content: center;
+
+}
+
+/* container */
+
+#container {
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  height: 11rem;
+
+  width: 100%;
+
+  /* background-color: #77786347; */
+
+  /* background-color: #63687847; */
+
+  background-color: transparent;
+
+}
+
+/* Boxes for hour, minutes, and seconds */
+
+.boxes {
+
+  position: relative;
+
+  display: grid;
+
+  height: 5rem;
+
+  width: 5rem;
+
+  margin: 0.2rem;
+
+  /* background-color: #FFFFFFFF; */
+
+  background-color: #00203FFF;
+
+  place-content: center;
+
+  font-weight: bolder;
+
+}
+
+/* Digits */
+
+.digits {
+
+  color: #ADEFD1FF;
+
+}
+
+/* Container for HOUR, MINUTE, SECOND headings */
+
+.label_boxes {
+
+  position: absolute;
+
+  bottom: 5.3rem;
+
+  display: grid;
+
+  place-content: center;
+
+  height: 2rem;
+
+  width: 5rem;
+
+  background-color: #ADEFD1FF;
+
+  color: #00203FFF;
+
+  font-weight: bolder;
+
+}
+
+/* functions */
+
+#functioneer {
+
+  margin-top: 1rem;
+
+  display: grid;
+
+  width: 100%;
+
+  place-content: center;
+
+}
+
+/* Time input */
+
+#time_input {
+
+  font-size: 16px;
+
+  font-size: max(16px, 1em);
+
+  font-family: inherit;
+
+  padding: 0.25em 0.5em;
+
+  margin-bottom: 0.3rem;
+
+  background-color: #FFFFFF;
+
+  border: 2px solid var(--input-border);
+
+  border-radius: 4px;
+
+}
+
+/* When input is on focus mode */
+
+#time_input:focus {
+
+  border-color: hsl(var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
+
+  outline: 0.3rem solid transparent;
+
+}
+
+/* Function buttons */
+
+.buttons {
+
+  display: grid;
+
+  place-content: center;
+
+  place-self: center;
+
+  margin: 0.2rem;
+
+  height: 1.5rem;
+
+  width: 5rem;
+
+  color: #FFFFFF;
+
+}
+
+/* Start button */
+
+#start {
+
+  background-color: green;
+
+}
+
+/* End button */
+
+#pause {
+
+  background-color: red;
+
+}
+
+/* Reset button */
+
+#reset {
+
+  background-color: #7C1F1F;
+
+}
