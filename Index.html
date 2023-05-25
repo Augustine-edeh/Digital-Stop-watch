@@ -6,35 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>COUNTDOWN TIMER</title>
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Style.css" />
   </head>
   <!-- HTML -->
   <body>
-    <div id="container">
-      <div id="hours_container" class="boxes">
-        <p class="label_boxes">Hour</p>
-        <p id="hours" class="digits">0</p>
-      </div>
-      <div id="minutes_container" class="boxes">
-        <p class="label_boxes">Minutes</p>
-        <p id="minutes" class="digits">0</p>
-      </div>
-      <div id="seconds_container" class="boxes">
-        <p class="label_boxes">Second</p>
-        <p id="seconds" class="digits">0</p>
-      </div>
-    </div>
-    <div id="functioneer">
-      <input
-        type="number"
-        id="time_input"
-        placeholder="Enter count down time in minutes"
-      />
-      <p id="start" class="buttons">Start</p>
-      <p id="pause" class="buttons">Pause</p>
-      <p id="reset" class="buttons">Reset</p>
-    </div>
+    <main>
+      <section id="container">
+        <div id="hours_container" class="boxes">
+          <p class="label_boxes">Hour</p>
+          <p id="hours" class="digits">0</p>
+        </div>
+        <div id="minutes_container" class="boxes">
+          <p class="label_boxes">Minutes</p>
+          <p id="minutes" class="digits">0</p>
+        </div>
+        <div id="seconds_container" class="boxes">
+          <p class="label_boxes">Second</p>
+          <p id="seconds" class="digits">0</p>
+        </div>
+      </section>
+
+      <section id="functioneer">
+        <input
+          type="number"
+          id="time_input"
+          placeholder="Enter count down time in minutes"
+        />
+        <p id="start" class="buttons">Start</p>
+        <p id="pause" class="buttons">Pause</p>
+        <p id="reset" class="buttons">Reset</p>
+      </section>
+    </main>
+
     <!-- Custom JavaScript -->
-    <script src="main.js"></script>
+    <script src="Main.js"></script>
   </body>
 </html>
