@@ -12,13 +12,12 @@
   padding: 0px;
 }
 /* Body */
-html,
-body {
+html {
   font-size: 15pt;
   display: grid;
+  place-content: center;
   height: 100%;
   width: 100%;
-  place-content: center;
 }
 /* container */
 #container {
@@ -103,9 +102,9 @@ body {
 }
 /* End button */
 #pause {
-  background-color: red;
+  background-color: rgb(180, 120, 10);
 }
 /* Reset button */
 #reset {
-  background-color: #7c1f1f;
+  background-color: red;
 }
