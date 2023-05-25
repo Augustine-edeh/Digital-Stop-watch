@@ -1,75 +1,60 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>COUNTDOWN TIMER</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Custom Styles -->
 
-  <title>COUNTDOWN TIMER</title>
-
-  <!-- Custom Styles -->
-
-  <link rel="stylesheet" href="style.css">
-
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
 
   <!-- HTML -->
 
-<body>
+  <body>
+    <div id="container">
+      <div id="hours_container" class="boxes">
+        <p class="label_boxes">Hour</p>
 
-  <div id="container">
+        <p id="hours" class="digits">0</p>
+      </div>
 
-    <div id="hours_container" class="boxes">
+      <div id="minutes_container" class="boxes">
+        <p class="label_boxes">Minutes</p>
 
-      <p class="label_boxes">Hour</p>
+        <p id="minutes" class="digits">0</p>
+      </div>
 
-      <p id="hours" class="digits">0</p>
+      <div id="seconds_container" class="boxes">
+        <p class="label_boxes">Second</p>
 
+        <p id="seconds" class="digits">0</p>
+      </div>
     </div>
 
-    <div id="minutes_container" class="boxes">
+    <div id="functioneer">
+      <input
+        type="number"
+        id="time_input"
+        placeholder="Enter count down time in minutes"
+      />
 
-      <p class="label_boxes">Minutes</p>
+      <p id="start" class="buttons">Start</p>
 
-      <p id="minutes" class="digits">0</p>
+      <p id="pause" class="buttons">Pause</p>
 
+      <p id="reset" class="buttons">Reset</p>
     </div>
 
-    <div id="seconds_container" class="boxes">
+    <!-- Custom JavaScript -->
 
-      <p class="label_boxes">Second</p>
-
-      <p id="seconds" class="digits">0</p>
-
-    </div>
-
-  </div>
-
-  
-
-  <div id="functioneer">
-
-    <input type="number" id="time_input" placeholder="Enter count down time in minutes"/>
-
-    <p id="start" class="buttons">Start</p>
-
-    <p id="pause" class="buttons">Pause</p>
-
-    <p id="reset" class="buttons">Reset</p>
-
-  </div>
-
-  
-
-  <!-- Custom JavaScript -->
-
-  <script src="main.js"></script>
-
-</body>
-
+    <script src="Main.js"></script>
+  </body>
 </html>
